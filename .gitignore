@@ -1,0 +1,7 @@
+# .gitignore 파일
+
+# node_modules 디렉토리를 무시
+node_modules/
+
+# .env 파일을 무시
+.env
