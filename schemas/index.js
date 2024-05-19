@@ -9,7 +9,7 @@ const connect = () => {
   mongoose
     .connect(
       // 빨간색으로 표시된 부분은 대여한 ID, Password, 주소에 맞게끔 수정해주세요!
-      DB_URL,
+      databaseUrl,
       {
         //Studio3T에서 db 생성후 연결
         dbName: "gserver_db",

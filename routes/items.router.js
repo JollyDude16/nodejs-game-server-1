@@ -125,7 +125,7 @@ router.get("/items/:itemId", async (req, res, next) => {
   // 일단 필요한 변수 선언
   try {
     const { itemId } = req.params;
-    const currentItem = await Item.findById(itemId)
+    const currentItem = await Item.findOne({item_number:itemId})
       .select("item_stats item_number item_name")
       .exec();
 
